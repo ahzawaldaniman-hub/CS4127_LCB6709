@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Discover Brunei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SAME NAVIGATION AS HOMEPAGE -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">✦</span>
+            <span>DISCOVER<br><strong>BRUNEI</strong></span>
+        </a>
+
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">Discover</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="destinations.html" class="nav-button">Explore Brunei ↗</a>
+    </header>
+
+    <main>
+        <!-- ORIGINAL CONTACT SECTION -->
+        <section class="cta" id="contact">
+            <div class="cta-content">
+                <span class="section-label">
+                    YOUR JOURNEY STARTS HERE
+                </span>
+
+                <h1>
+                    Ready to Discover<br>
+                    <em>Brunei Darussalam?</em>
+                </h1>
+
+                <p>
+                    Experience the warmth, culture and
+                    natural beauty of the Abode of Peace.
+                </p>
+
+                <a href="https://www.bruneitourism.com/"
+                   class="button-gold"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visit Brunei Tourism ↗
+                </a>
+            </div>
+        </section>
+
+<!-- CONTACT INFORMATION AND ENQUIRY FORM -->
+<section class="contact-section section-padding">
+
+    <div class="discover-section-heading">
+        <span class="section-label">WE ARE HERE TO HELP</span>
+
+        <h2>Let's Get in <em>Touch.</em></h2>
+
+        <p>
+            Have questions about visiting Brunei?
+            Find useful contact information and
+            get assistance with your travel enquiries.
+        </p>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-information">
+
+            <h3>Contact Information</h3>
+
+            <p>
+                For official tourism enquiries, contact
+                the Tourism Development Department.
+            </p>
+
+            <div class="contact-item">
+                <h4>📍 Address</h4>
+                <p>
+                    Tourism Development Department<br>
+                    Jalan Dewan Majlis<br>
+                    Bandar Seri Begawan BB3913<br>
+                    Brunei Darussalam
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h4>☎ Telephone</h4>
+
+                <a href="tel:+6732382822">
+                    +673 238 2822
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <h4>✉ Email Address</h4>
+
+                <a href="mailto:info@tourism.gov.bn">
+                    info@tourism.gov.bn
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <h4>◷ Office Hours</h4>
+
+                <p>
+                    Monday - Thursday & Saturday<br>
+                    7:45 AM - 12:15 PM<br>
+                    1:30 PM - 4:30 PM
+                </p>
+
+                <p>
+                    Closed on Friday, Sunday
+                    and public holidays.
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h4> Official Website</h4>
+
+                <a href="https://www.bruneitourism.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    www.bruneitourism.com
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form-container">
+
+            <h3>Send Us a Message</h3>
+
+            <p>
+                Complete the form below to prepare
+                your tourism enquiry.
+            </p>
+
+            <form class="contact-form"
+                  onsubmit="prepareEnquiry(event)">
+
+                <label for="fullname">Full Name *</label>
+
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       placeholder="Enter your full name"
+                       required>
+
+                <label for="email">Email Address *</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email address"
+                       required>
+
+                <label for="phone">
+                    Phone Number (Optional)
+                </label>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="+673">
+
+                <label for="subject">Subject *</label>
+
+                <select id="subject"
+                        name="subject"
+                        required>
+
+                    <option value="">
+                        Select your enquiry
+                    </option>
+
+                    <option>General Enquiry</option>
+                    <option>Tourist Attractions</option>
+                    <option>Events and Festivals</option>
+                    <option>Travel Information</option>
+                    <option>Feedback</option>
+
+                </select>
+
+                <label for="message">Your Message *</label>
+
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <button type="submit"
+                        class="contact-submit">
+                    Prepare Email ↗
+                </button>
+
+                <p class="form-note">
+                    This form opens your email application.
+                    Messages are not automatically sent.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT LOCATION -->
+<section class="location-section section-padding">
+
+    <div class="discover-section-heading">
+
+        <span class="section-label">FIND US</span>
+
+        <h2>Tourism Office <em>Location.</em></h2>
+
+        <p>
+            Find the Tourism Development Department
+            in Bandar Seri Begawan.
+        </p>
+
+    </div>
+
+    <div class="contact-map">
+
+        <iframe
+            src="https://maps.google.com/maps?q=Tourism%20Development%20Department%20Jalan%20Dewan%20Majlis%20Brunei&output=embed"
+            title="Tourism Development Department Location"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+    <div class="location-button">
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Tourism+Development+Department+Jalan+Dewan+Majlis+Brunei"
+           target="_blank"
+           rel="noopener noreferrer">
+            Open in Google Maps ↗
+        </a>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- ORIGINAL FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <h3>DISCOVER BRUNEI ✦</h3>
+                <p>
+                    Discover the unexpected in
+                    Brunei Darussalam, the Abode of Peace.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>EXPLORE</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">Discover</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="experiences.html">Experiences</a>
+                <a href="contact.html">Contact</a>
+                
+            </div>
+
+            <div class="footer-links">
+                <h4>TRAVEL RESOURCES</h4>
+                <a href="https://www.bruneitourism.com/">Brunei Tourism</a>
+                <a href="https://www.mfa.gov.bn/">Ministry of Foreign Affairs</a>
+                <a href="https://www.flyroyalbrunei.com/">Royal Brunei Airlines</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© Discover Brunei.</span>
+            <span>Made to celebrate Brunei Darussalam</span>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
